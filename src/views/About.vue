@@ -9,14 +9,13 @@
         <li>加载的进度条 nprogress.js</li>
         <li>css 样式初始化 normalize.css</li>
         <li>动态页面标题 vue-router</li>
+        <li>处理请求 axios.js</li>
+        <li>数据模拟 axios-mock-adapter mock.js</li>
       </ul>
     </p>
     <banner>未来计划</banner>
     <p>
       <ul>
-        <li>v1.1</li>
-        <li>处理请求 axios.js</li>
-        <li>数据模拟 mock.js</li>
         <li>v1.2</li>
         <li>动态路由</li>
         <li>权限展示</li>
@@ -26,12 +25,16 @@
     <banner>版本更新历史</banner>
     <p>
       <ul>
-        <li>v1.0</li>
-        <li>2018.08.16</li>
+        <li>v1.1</li>
+        <li>2018.08.17</li>
+        <li>处理请求 axios.js</li>
+        <li>数据模拟 axios-mock-adapter mock.js</li>
       </ul>
     </p>
     <p>
       <ul>
+        <li>v1.0</li>
+        <li>2018.08.16</li>
         <li>加载的进度条 nprogress.js</li>
         <li>css 样式初始化 normalize.css</li>
         <li>动态页面标题 vue-router</li>

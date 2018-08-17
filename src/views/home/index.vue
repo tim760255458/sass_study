@@ -1,14 +1,16 @@
 <template>
   <div class="home">
-    <p>titile this is title</p>
+    <h1>titile this is title</h1>
     <div>
       <Card v-for="(item, index) of list" :key="index" :data="item"></Card>
     </div>
+    <button @click="query">request</button>
   </div>
 </template>
 
 <script>
 import Card from '../../components/Card'
+import { login } from '../../api'
 export default {
   name: 'home',
   components: {
@@ -16,7 +18,7 @@ export default {
   },
   data () {
     return {
-      message:'home',
+      message: 'home',
       list: [
         {
           title: 'title1',
@@ -32,13 +34,27 @@ export default {
         }
       ]
     }
+  },
+  methods: {
+    query () {
+      login({
+        id: 1
+      }).then(res => {
+        console.log(res)
+      }).catch(err => {
+        console.log(err)
+      })
+    }
   }
 }
 </script>
 
 <style lang="scss" scoped>
 .home {
-  > p {}
+  > h1 {
+    color: $color_j;
+    text-shadow: 2px 2px 3px #aaa;
+  }
   > div {
     display: flex;
     .card {
@@ -47,4 +63,3 @@ export default {
   }
 }
 </style>
-

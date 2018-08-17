@@ -5,6 +5,7 @@
     </div>
     <div class="nav_main">
       <ul>
+        <!-- <router-link v-if="item.show" v-for="(item, index) of list" :key="index" tag="li" :to="item.url">{{ item.title }}</router-link> -->
         <router-link tag="li" to="/">首页</router-link>
         <router-link tag="li" to="/home">项目</router-link>
         <router-link tag="li" to="/about">关于</router-link>
@@ -15,11 +16,25 @@
 </template>
 
 <script>
+import { menu } from '../../../api/index.js'
 export default {
   name: 'nav',
   data () {
     return {
-      message: 'hah'
+      message: 'hah',
+      list: []
+    }
+  },
+  mounted () {
+    this.getMenu()
+  },
+  methods: {
+    getMenu () {
+      menu({
+        id: 1
+      }).then(res => {
+        this.list = res.data.menus
+      })
     }
   }
 }

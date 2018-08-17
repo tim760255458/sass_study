@@ -33,9 +33,9 @@ export default new Router({
     //   meta: {
     //     title: '关于 - 不二'
     //   }
-    // }
+    // },
     {
-      path: '/about',
+      path: '/About',
       component: LayOut,
       children: [
         {

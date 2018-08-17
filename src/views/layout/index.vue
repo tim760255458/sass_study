@@ -27,9 +27,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.layout {
-
-}
 .layout_nav {
   display: flex;
   justify-content: center;
