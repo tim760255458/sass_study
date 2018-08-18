@@ -67,6 +67,7 @@ p {
   border: 1px solid #ddd;
   padding: 10px;
   border-radius: 4px;
+  background: #ffffff;
   ul {
     display: flex;
     flex-direction: column;

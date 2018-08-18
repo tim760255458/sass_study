@@ -5,9 +5,12 @@
 $p_color: red;
 
 @mixin shadow {
-  box-shadow: 0 0 4px 5px #ddd;
+  box-shadow: 0 0 3px 3px $color_divider;
 }
 
+div {
+  box-sizing: border-box;
+}
 ul {
   list-style: none;
   padding: 0;

@@ -5,8 +5,11 @@ import store from './store'
 import 'normalize.css'
 import NProgress from 'nprogress'
 import 'nprogress/nprogress.css'
+import listCard from './components/list_card.vue'
 
 Vue.config.productionTip = false
+
+Vue.component('list-card', listCard)
 
 router.beforeEach((to, from, next) => {
   NProgress.start()

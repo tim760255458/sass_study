@@ -4,6 +4,7 @@
     <div>
       <Card v-for="(item, index) of list" :key="index" :data="item"></Card>
     </div>
+    <list-card v-for="(item, index) of list" :key="index" :data="item"></list-card>
     <button class="btn_default" @click="query">按钮</button>
     <button class="btn_primary" @click="query">按钮</button>
     <button class="btn_info" @click="query">按钮</button>
