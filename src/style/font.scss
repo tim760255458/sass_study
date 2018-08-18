@@ -1,0 +1,38 @@
+// 字号
+$font_size_l: 18px;
+$font_size_m: 16px;
+$font_size_s: 14px;
+$font_size_x: 12px;
+
+// 标题
+.font_tz { // 主标题
+  font-size: $font_size_l;
+  font-weight: bold;
+  color: #464c5b;
+}
+.font_tc { // 次级标题
+  @extend .font_tz;
+  font-size: $font_size_s;
+}
+.font_tx { // 小标题
+  @extend .font_tz;
+  font-size: $font_size_x;
+}
+
+// 内容
+.font_content { // 正文
+  font-size: $font_size_s;
+  color: #657180;
+}
+.font_help { // 辅助文字
+  font-size: $font_size_x;
+  color: #9ea7b4;
+}
+.font_disabled { // 失效文字
+  font-size: $font_size_s;
+  color: #c3cbd6;
+}
+.font_link { // 链接文字
+  font-size: $font_size_s;
+  color: #3399ff;
+}

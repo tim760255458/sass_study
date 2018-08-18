@@ -1,9 +1,9 @@
 <template>
   <div class="card curved_box">
-    <header slot="header">{{ data.title }}</header>
-    <p slot="content">{{ data.content }}</p>
+    <header class="font_tc" slot="header">{{ data.title }}</header>
+    <p class="font_content" slot="content">{{ data.content }}</p>
     <footer slot="footer">
-      <a :href="data.url">{{ data.name }}</a>
+      <a class="font_link" :href="data.url">{{ data.name }}</a>
     </footer>
   </div>
 </template>

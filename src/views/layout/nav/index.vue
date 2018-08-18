@@ -7,6 +7,7 @@
       <ul>
         <!-- <router-link v-if="item.show" v-for="(item, index) of list" :key="index" tag="li" :to="item.url">{{ item.title }}</router-link> -->
         <router-link tag="li" to="/">首页</router-link>
+        <router-link tag="li" to="/introduction">介绍</router-link>
         <router-link tag="li" to="/home">项目</router-link>
         <router-link tag="li" to="/about">关于</router-link>
       </ul>
@@ -62,10 +63,10 @@ export default {
     padding: 0 20px;
     color: white;
     &:hover {
-      color: $color_f;
+      color: $color_warning;
     }
     &.router-link-exact-active {
-      color: $color_f;
+      color: $color_success;
     }
   }
 }

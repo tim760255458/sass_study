@@ -3,6 +3,7 @@ import Router from 'vue-router'
 // import Home from './views/Home.vue'
 import LayOut from './views/layout'
 import Home from './views/home/index.vue'
+import Introduction from './views/introduction/index.vue'
 
 Vue.use(Router)
 
@@ -43,6 +44,19 @@ export default new Router({
           component: () => import(/* webpackChunkName: "about" */ './views/About.vue'),
           meta: {
             title: '关于 - 不二'
+          }
+        }
+      ]
+    },
+    {
+      path: '/Introduction',
+      component: LayOut,
+      children: [
+        {
+          path: '',
+          component: Introduction,
+          meta: {
+            title: '介绍 - 不二'
           }
         }
       ]

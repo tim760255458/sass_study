@@ -1,0 +1,83 @@
+.btn_default {
+  border: 1px solid $color_border;
+  height: 24px;
+  line-height: 1;
+  padding: 0 10px;
+  border-radius: 2px;
+  outline: none;
+  color: $color_content;
+  background-color: #ffffff;
+  font-size: $font_size_s;
+  cursor: pointer;
+  &:hover {
+    color: $color_zh;
+    border-color: $color_zh;
+  }
+  &:focus {
+    color: $color_za;
+    border-color: $color_za;
+  }
+}
+.btn_primary {
+  border: 1px solid $color_z;
+  height: 24px;
+  line-height: 1;
+  padding: 0 10px;
+  border-radius: 2px;
+  outline: none;
+  color: #ffffff;
+  background-color: $color_z;
+  font-size: $font_size_s;
+  cursor: pointer;
+  &:hover {
+    background-color: $color_zh;
+  }
+}
+.btn_info {
+  border: 1px solid $color_info;
+  height: 24px;
+  line-height: 1;
+  padding: 0 10px;
+  border-radius: 2px;
+  outline: none;
+  color: #ffffff;
+  background-color: $color_info;
+  font-size: $font_size_s;
+  cursor: pointer;
+}
+.btn_success {
+  border: 1px solid $color_success;
+  height: 24px;
+  line-height: 1;
+  padding: 0 10px;
+  border-radius: 2px;
+  outline: none;
+  color: #ffffff;
+  background-color: $color_success;
+  font-size: $font_size_s;
+  cursor: pointer;
+}
+.btn_warning {
+  border: 1px solid $color_warning;
+  height: 24px;
+  line-height: 1;
+  padding: 0 10px;
+  border-radius: 2px;
+  outline: none;
+  color: #ffffff;
+  background-color: $color_warning;
+  font-size: $font_size_s;
+  cursor: pointer;
+}
+.btn_error {
+  border: 1px solid $color_error;
+  height: 24px;
+  line-height: 1;
+  padding: 0 10px;
+  border-radius: 2px;
+  outline: none;
+  color: #ffffff;
+  background-color: $color_error;
+  font-size: $font_size_s;
+  cursor: pointer;
+}

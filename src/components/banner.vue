@@ -1,5 +1,5 @@
 <template>
-  <h3>
+  <h3 class="font_tc">
     <slot>这里是小标题，通过slot设置</slot>
   </h3>
 </template>
@@ -17,6 +17,5 @@ export default {
 h3 {
   padding: 5px 10px;
   border-left: 2px solid $color_z;
-  color: $color_z;
 }
 </style>

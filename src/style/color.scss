@@ -1,3 +1,22 @@
-$color_z: #ff6666; // 主色调
-$color_f: #ffff00; // 辅色调
-$color_j: #006699; // 基础色
+// $color_z: #ff6666; // 主色调
+// $color_f: #ffff00; // 辅色调
+// $color_j: #006699; // 基础色
+// 主色
+$color_z: #2d8cf0; // 默认
+$color_zh: #5cadff; // hover
+$color_za: #2b85e4; // active
+
+// 辅助色
+$color_info: #2db7f5; // info
+$color_success: #19be6b; // success
+$color_warning: #ff9900; // warning
+$color_error: #ed4014; // error
+
+// 中性色
+$color_title: #17233d; // 标题
+$color_content: #515a6e; // 内容
+$color_sub: #808695; // 辅助/图标
+$color_disabled: #c5c8ce; // 失效
+$color_border: #dcdee2; // 边框
+$color_divider: #e8eaec; // 分割线
+$color_background: #f8f8f9; // 背景
