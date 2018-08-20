@@ -4,6 +4,7 @@ import Router from 'vue-router'
 import LayOut from './views/layout'
 import Home from './views/home/index.vue'
 import Introduction from './views/introduction/index.vue'
+import Login from './views/login'
 
 Vue.use(Router)
 
@@ -60,6 +61,13 @@ export default new Router({
           }
         }
       ]
+    },
+    {
+      path: '/login',
+      component: Login,
+      meta: {
+        title: '登录 - 不二'
+      }
     }
   ]
 })
