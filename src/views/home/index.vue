@@ -67,5 +67,11 @@ export default {
       margin-right: 20px;
     }
   }
+  > button {
+    margin-right: 10px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
 </style>
