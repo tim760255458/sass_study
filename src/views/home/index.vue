@@ -11,16 +11,30 @@
     <button class="btn_success" @click="query">按钮</button>
     <button class="btn_warning" @click="query">按钮</button>
     <button class="btn_error" @click="query">按钮</button>
+    <Collapse v-model="activeName">
+      <Panel name="name1">
+        <span slot="title">this is name1 title</span>
+        <span slot="content">this is name1 content</span>
+      </Panel>
+      <Panel name="name2">
+        <span slot="title">this is name2 title</span>
+        <span slot="content">this is name2 content</span>
+      </Panel>
+    </Collapse>
   </div>
 </template>
 
 <script>
 import Card from '../../components/Card'
+import Collapse from '../../components/Collapse'
+import Panel from '../../components/Panel'
 import { login } from '../../api'
 export default {
   name: 'home',
   components: {
-    Card
+    Card,
+    Collapse,
+    Panel
   },
   data () {
     return {
@@ -38,7 +52,8 @@ export default {
           name: 'title2',
           url: 'https://github.com/tim760255458/mpvue_study_example'
         }
-      ]
+      ],
+      activeName: 'name1'
     }
   },
   methods: {
