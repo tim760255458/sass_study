@@ -24,7 +24,7 @@ export default {
       currentValue: this.value
     }
   },
-  mounted() {
+  mounted () {
     this.setActive()
   },
   methods: {
