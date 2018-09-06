@@ -26,7 +26,7 @@ export default {
   margin-bottom: 10px;
   border-radius: 4px;
   background: #ffffff;
-  transition: all .5s ease;
+  transition: all .15s ease;
   &:hover {
     @include shadow;
     transform: scale(1.05, 1.05);
